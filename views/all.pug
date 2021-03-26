@@ -1,0 +1,20 @@
+include header.pug
+
+html
+  head 
+    title Prodotti richiesti
+  table
+    tr
+      th Id
+      th Sezione 
+      th Marca 
+      th Nome 
+    tbody
+      each val in data
+        tr
+          td=val.id
+          td=val.sezione
+          td=val.marca
+          td=val.nome
+  form(action = "/all" method = "POST")
+    button(type = "submit") Torna alla Home
