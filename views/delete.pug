@@ -1,0 +1,10 @@
+include header.pug
+
+html
+  head
+    title Cerca prodotto da eliminare
+  body
+    form(action = "/delete" method = "POST") Cerca prodotto da eliminare
+      p Cerca per Id
+      input(name="valoreDelete")
+      button(type = "submit") Cerca!

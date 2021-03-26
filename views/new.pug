@@ -1,0 +1,17 @@
+include header.pug
+
+html
+  head
+    title Inserisci nuovo prodotto
+  body
+    form(action = "/new" method = "POST")
+      label(for = "sezione") Sezione:
+      input(name = "sezione")
+      br
+      label(for = "marca") Marca:
+      input(name = "marca")
+      br
+      label(for = "nome") Nome:
+      input(name = "nome")
+      br
+      button(type = "submit") Crea!

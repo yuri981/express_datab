@@ -1,0 +1,16 @@
+include header.pug
+
+html
+  head
+    title Prodotto
+  body
+    if(type == "error")
+      h3 #{message}
+    else
+      h3 Inserito un nuovo prodotto: 
+      h4 Id: #{ide}
+      h4 Sezione: #{prodotto.sezione}
+      h4 Marca: #{prodotto.marca}
+      h4 Nome: #{prodotto.nome}
+  form(action = "/show_message" method = "POST")
+    button(type = "submit") Torna alla Home

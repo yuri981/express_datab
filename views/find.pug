@@ -1,0 +1,13 @@
+include header.pug
+
+html
+  head
+    title Cerca prodotti
+  body
+    form(action = "/find" method = "POST") Cerca prodotto
+      p Cerca per...
+      select(name='cercaSelect')
+        option(value='sezione') Sezione
+        option(value='marca') Marca
+      input(name="valoreFind")
+      button(type = "submit") Cerca!
